@@ -10,39 +10,39 @@ import (
 
 
 type ExternalUrls struct {
-	Spotify		string
+     Spotify	string
 }
 
 
 type Artist struct {
-	Name			string
-	ExternalUrls 	ExternalUrls
+     Name		string
+     ExternalUrls 	ExternalUrls
 }
 
 
 type Album struct {
-	Name			string
-	Artists			[]Artist
-	ExternalUrls	ExternalUrls
+     Name			string
+     Artists			[]Artist
+     ExternalUrls		ExternalUrls
 }
 
 
 type Track struct {
-	Name			string
-	Href			string
-	Popularity		int
-	Album			Album
-	ExternalUrl	ExternalUrls
+     Name			string
+     Href			string
+     Popularity			int
+     Album			Album
+     ExternalUrl		ExternalUrls
 }
 
 
 type ApiResponse struct {
-	Tracks		Items[Track]
+     Tracks		Items[Track]
 }
 
 
 type Items[T any] struct {
-	Items []T
+     Items []T
 }
 
 
